@@ -20,7 +20,7 @@ db.on('error',console.error.bind(console,'error connecting to db'));
 router.get('/videos',function(req,res)
 {
     // res.send('api works');
-    console.log('get reuest for all videos');
+    console.log('get request for all videos');
     Video.find({})
     .exec(function(err,videos)
     {
@@ -28,6 +28,22 @@ router.get('/videos',function(req,res)
             console.log("ERROR!!! retrieving vidoes");
         }else{
             res.json(videos);
+        }
+    })
+});
+
+
+router.get('/videos/:id',function(req,res)
+{
+    // res.send('api works');
+    console.log('get request for single video');
+    Video.findById(req.params.id)
+    .exec(function(err,video)
+    {
+        if (err){
+            console.log("ERROR!!! retrieving vidoe");
+        }else{
+            res.json(video);
         }
     })
 });
