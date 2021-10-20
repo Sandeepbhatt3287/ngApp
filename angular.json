@@ -28,7 +28,7 @@
             ],
             "styles": [
               "src/styles.css",
-              "/D:\Coding Ninjas\MEAN\ngApp\node_modules\bootstrap\dist\css\bootstrap.min.css"
+              "D:/Coding Ninjas/MEAN/ngApp/node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
           },
