@@ -66,7 +66,7 @@ router.post('./video',function(req,res){
                     res.json(insertedVideo);
                 }
     })
-})
+});
 
 // put request
 
@@ -91,5 +91,5 @@ router.put('/video/:id',function(req,res)
           }
       }
       )
-  })
+  });
 module.exports = router;
