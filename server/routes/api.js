@@ -27,7 +27,7 @@ router.get('/videos',function(req,res)
         if (err){
             console.log("ERROR!!! retrieving vidoes");
         }else{
-            res.json(vidoes);
+            res.json(videos);
         }
     })
 });
