@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   inputs:['videos']
 })
 export class VideoListComponent implements OnInit {
-  // videos: any;
+ public videos: any;
 
   constructor() { }
 
