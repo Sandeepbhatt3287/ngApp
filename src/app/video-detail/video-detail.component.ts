@@ -11,9 +11,21 @@ export class VideoDetailComponent implements OnInit {
    
    public video: any;
 
+   public editTitle : boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  ngOnChanges()
+  {
+    this.editTitle= false;
+  }
+
+
+  onTitleClick(){
+    this.editTitle =true;
   }
 
 }
