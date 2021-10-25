@@ -22,7 +22,7 @@ export class VideoCenterComponent implements OnInit {
   ngOnInit(): void {
   }
    
-  onSelectedVideo(video:any)
+  onSelectVideo(video:any)
   {
     this.selectedVideo= video;
     console.log(this.selectedVideo);

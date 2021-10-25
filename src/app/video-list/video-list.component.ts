@@ -9,7 +9,7 @@ import { Video } from '../video';
   outputs:['SelectVideo']
 })
 export class VideoListComponent implements OnInit {
-//  public videos: any;
+ public videos: any;
 
 public SelectVideo= new EventEmitter();
 
@@ -17,7 +17,7 @@ public SelectVideo= new EventEmitter();
 
   ngOnInit(): void {
   }
-  
+
   onSelect(vid: Video)
   {
     this.SelectVideo.emit(vid);
