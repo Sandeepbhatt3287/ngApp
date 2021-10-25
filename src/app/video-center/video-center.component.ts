@@ -10,7 +10,7 @@ import { VideoService } from '../video.service';
 })
 export class VideoCenterComponent implements OnInit {
 
-  videos!: Array<Video>;
+  videos: any;
 
   selectedVideo!: Video;
 

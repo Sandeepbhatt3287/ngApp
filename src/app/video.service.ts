@@ -7,9 +7,9 @@ import { map } from 'rxjs/operators';
 })
 export class VideoService {
 
-  public _getUrl = './api/videos';
+  public _getUrl = '/api/videos';
 
-  constructor( public _http: HttpClient) { }
+  constructor( private _http: HttpClient) { }
 
   getVideos()
   {
