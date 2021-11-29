@@ -1,6 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
+// const app = express()
+
+
 const mongoose= require('mongoose');
 
 const Video = require('../models/video');
@@ -111,5 +114,8 @@ router.delete('/video/:id',function(req,res)
     })
    } );
 
+
+//    Express
+// app.listen(4200, () => console.log("Express connection established."));
    
 module.exports = router;
